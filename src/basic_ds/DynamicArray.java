@@ -18,4 +18,8 @@ public class DynamicArray {
         array[index] = element;
         size++;
     }
+
+    /**
+     * 遍历
+     */
 }
