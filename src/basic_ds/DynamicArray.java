@@ -11,9 +11,9 @@ public class DynamicArray {
     /**
      * 添加元素
      */
-    public void add(int index, int element){
+    public void add(int index, int element) {
         size++;
-        System.arraycopy(array,index,array,index+1,size-index);
+        System.arraycopy(array, index, array, index + 1, size - index);
         array[index] = element;
     }
 }
