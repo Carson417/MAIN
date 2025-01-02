@@ -1,7 +1,7 @@
 package use.basic_ds.linkedlist;
 
 
-import main.basic_ds.linkedlist.SingleLinkedList;
+import ds_al.basic_ds.linkedlist.SingleLinkedList;
 
 public class SingleLinkedListUse {
 

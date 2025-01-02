@@ -1,7 +1,7 @@
 package use.basic_ds;
 
 
-import main.basic_ds.DynamicArray;
+import ds_al.basic_ds.DynamicArray;
 
 public class DynamicArrayUse {
 

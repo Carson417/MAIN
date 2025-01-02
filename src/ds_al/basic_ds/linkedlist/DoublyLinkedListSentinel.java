@@ -1,6 +1,4 @@
-package main.basic_ds.linkedlist;
-
-import org.w3c.dom.Node;
+package ds_al.basic_ds.linkedlist;
 
 import java.util.Iterator;
 
