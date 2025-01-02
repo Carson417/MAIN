@@ -1,4 +1,4 @@
-package main.basic_ds;
+package ds_al.basic_ds;
 
 import java.util.Arrays;
 import java.util.Iterator;

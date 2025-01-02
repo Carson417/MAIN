@@ -1,4 +1,4 @@
-package main.basic_ds.linkedlist;
+package ds_al.basic_ds.linkedlist;
 
 /**
  * 双向环形链表
