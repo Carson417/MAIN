@@ -1,4 +1,4 @@
-package ds_al.basic_al;
+package ds_al.basic_al.search;
 
 /**
  * arr是升序数组，查询arr中和target值相等的索引
