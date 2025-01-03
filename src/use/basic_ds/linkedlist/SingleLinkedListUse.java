@@ -22,5 +22,12 @@ public class SingleLinkedListUse {
         for (Integer i : list) {
             System.out.println(i);
         }
+
+
+        list.loop_recursion(value->{
+            System.out.println(value);
+        },value->{
+            System.out.println(value);
+        });
     }
 }

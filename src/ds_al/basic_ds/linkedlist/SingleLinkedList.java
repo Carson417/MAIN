@@ -1,5 +1,6 @@
 package ds_al.basic_ds.linkedlist;
 
+import java.sql.SQLOutput;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
@@ -7,7 +8,7 @@ import java.util.function.Consumer;
  * 单链表
  * 1.在链表头添加
  * 2.在链表尾添加（找最后一个节点）
- * 3.遍历：（1）for (2)while (3)迭代器
+ * 3.遍历：（1）for (2)while (3)迭代器 (4)递归遍历
  * 4.根据索引找节点
  * 5.向索引位置插节点
  * 6.删除节点：1）删除第一个节点 2）按索引删除节点
@@ -109,6 +110,23 @@ public class SingleLinkedList implements Iterable<Integer> {
                 return value;
             }
         };
+    }
+
+    /**
+     * 遍历链表方法4：递归遍历
+     */
+    public void loop_recursion(Consumer<Integer> before,Consumer<Integer> after){
+        recursion(head,before,after);
+    }
+
+    // 针对某个节点处理的过程,递归要注意终止
+    private void recursion(Node current,Consumer<Integer> before,Consumer<Integer> after){
+        if(current==null){
+            return;
+        }
+        before.accept(current.value);
+        recursion(current.next,before,after);
+        after.accept(current.value);
     }
 
 
