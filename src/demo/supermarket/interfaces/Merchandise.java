@@ -1,4 +1,4 @@
-package demo.supermarket;
+package demo.supermarket.interfaces;
 
 public interface Merchandise {
 
