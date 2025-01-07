@@ -1,4 +1,4 @@
-package demo.supermarket;
+package demo.supermarket.interfaces;
 
 public interface SuperMarket {
 
@@ -10,7 +10,7 @@ public interface SuperMarket {
     /**
      * 根据分类随机选择商品
      */
-    Merchandise [] getRandoMerchandiseOfCategory(Category category);
+    Merchandise[] getRandoMerchandiseOfCategory(Category category);
 
     void addEarnedMoney(double earnedMoney);
 
