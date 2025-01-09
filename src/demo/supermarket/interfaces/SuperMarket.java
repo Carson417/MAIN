@@ -5,7 +5,7 @@ public interface SuperMarket {
     /**
      * 获取所有商品
      */
-    //Merchandise [] getAllMerchandise;
+    Merchandise[] getAllMerchandise();
 
     /**
      * 根据分类随机选择商品
