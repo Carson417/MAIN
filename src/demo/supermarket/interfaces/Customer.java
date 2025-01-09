@@ -2,6 +2,8 @@ package demo.supermarket.interfaces;
 
 public interface Customer {
 
+    String getCustId();
+
     /**
      * 开始购物前的准备
      */
