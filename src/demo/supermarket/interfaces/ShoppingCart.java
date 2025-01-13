@@ -20,23 +20,23 @@ public class ShoppingCart {
         return curr < max;
     }
 
-    public boolean add(Merchandise m,int countToBuy){
-        if(!canHold()){
+    public boolean add(Merchandise m, int countToBuy) {
+        if (!canHold()) {
             return false;
         }
-        buy[curr]=m;
+        buy[curr] = m;
         this.count[curr] = countToBuy;
         curr++;
         m.buy(countToBuy);
         return true;
     }
 
-    public double calculateOriginCost(){
+    public double calculateOriginCost() {
         double ret = 0;
-        int pos =-1;
-        for(Merchandise m : buy){
+        int pos = -1;
+        for (Merchandise m : buy) {
             pos++;
-            if(m==null){
+            if (m == null) {
                 continue;
             }
             ret = m.getPurchasePrice() * count[pos];
@@ -45,18 +45,18 @@ public class ShoppingCart {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("==================\n");
         sb.append("购物时间:").append(new Date()).append("\n");
-        int pos =-1;
-        for(Merchandise m:buy){
+        int pos = -1;
+        for (Merchandise m : buy) {
             pos++;
-            if(m==null){
+            if (m == null) {
                 continue;
             }
             sb.append(m.getCategory().name()).append("\t").append(m.getName()).append("\t")
-                    .append(count[pos]).append("\t").append(m.getSoldPrice()*count[pos]).append("\n");
+                    .append(count[pos]).append("\t").append(m.getSoldPrice() * count[pos]).append("\n");
         }
         sb.append("应付总额:").append(calculateOriginCost()).append("\n");
         sb.append("==================\n");
